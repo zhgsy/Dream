@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RewardFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLogin"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen150"
+               >
+                <RelativeLayout
+                    android:id="@+id/mhead_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen30">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/r_head_image"
+                        android:layout_width="@dimen/dimen60"
+                        android:layout_height="@dimen/dimen60"
+                        app:placeholderImage="@mipmap/heard_image"
+                        app:roundAsCircle="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/dimen30"/>
+                    <TextView
+                        android:id="@+id/r_head_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:layout_toRightOf="@+id/r_head_image"
+                        android:text="13522301073"
+                        android:textSize="15sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/r_head_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r_head_num"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:layout_toRightOf="@+id/r_head_image"
+                        android:text="普通会员"
+                        android:textColor="#ffcc00"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen80"
+                    android:layout_below="@+id/mhead_image"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:background="@drawable/reward_bg"
+                    android:layout_marginLeft="@dimen/dimen30"
+                    android:layout_marginRight="@dimen/dimen30"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen10"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="左区成绩"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen10"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="右区成绩"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CCCCCC"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_below="@+id/r_head_num"
+                    android:layout_gravity="center"
+                    android:background="@drawable/reward_bag"
+                    android:layout_marginRight="@dimen/dimen30"
+                    android:layout_marginLeft="@dimen/dimen30"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/left_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen5"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1000"
+                            android:textColor="#990033"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/right_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen5"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1000"
+                            android:textColor="#990033"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:layout_marginRight="@dimen/dimen10"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="@dimen/dimen5">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/r_quanreward"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen35"
+                            android:layout_marginLeft="@dimen/dimen10"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen5"
+                                android:layout_weight="1"
+                                android:text="我的权益"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                />
+                            <ImageView
+                                android:id="@+id/r_image_left"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dimen5"
+                                android:src="@mipmap/left_image" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen2"
+                            android:layout_marginTop="@dimen/dimen5"
+                            android:background="#E8E8E8" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dimen20"
+                            android:orientation="horizontal">
+
+                         <LinearLayout
+                             android:layout_width="0dp"
+                             android:layout_weight="1"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical">
+                             <TextView
+                                 android:id="@+id/r_zong"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="@dimen/dimen30"
+                                 android:text="1000"
+                                 android:textSize="14sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_below="@+id/r_zong"
+                                 android:layout_marginLeft="@dimen/dimen20"
+                                 android:layout_marginTop="@dimen/dimen10"
+                                 android:text="总奖励积分"
+                                 android:textSize="12sp"
+                                 android:textStyle="bold"
+                                 android:paddingBottom="@dimen/dimen10"
+                                 />
+                         </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:id="@+id/r_xian"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="65"
+                                  android:textSize="14sp"
+                                  android:textStyle="bold"
+                                  />
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:layout_marginTop="@dimen/dimen10"
+                                  android:text="现有积分"
+                                  android:textSize="12sp"
+                                  android:textStyle="bold"
+                                  android:paddingBottom="@dimen/dimen10"
+                                  />
+                          </LinearLayout>
+
+                           <LinearLayout
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+                               <TextView
+                                   android:id="@+id/r_tui"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="center"
+                                   android:text="10"
+                                   android:textSize="14sp"
+                                   android:textStyle="bold"
+                                   />
+
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_below="@+id/r_tui"
+                                   android:layout_marginTop="@dimen/dimen10"
+                                   android:layout_toRightOf="@+id/r_xian"
+                                   android:text="推荐人数"
+                                   android:gravity="center"
+                                   android:textSize="12sp"
+                                   android:textStyle="bold"
+                                   android:paddingBottom="@dimen/dimen10"
+                                   />
+                           </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/r_tuan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="10"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="团队总数"
+                                    android:layout_marginTop="@dimen/dimen10"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:paddingBottom="@dimen/dimen10"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:layout_marginRight="@dimen/dimen10"
+                    app:cardCornerRadius="@dimen/dimen5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/r_huireward"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen35"
+                            android:layout_marginLeft="@dimen/dimen10"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen5"
+                                android:layout_weight="1"
+                                android:text="会员管理"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:id="@+id/r_hui_left"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_marginTop="@dimen/dimen5"
+                                android:src="@mipmap/left_image" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen2"
+                            android:layout_marginTop="@dimen/dimen10"
+                            android:background="#E8E8E8" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dimen10"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/r_dan"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dimen10"
+                                >
+                                <ImageView
+                                    android:layout_width="@dimen/dimen35"
+                                    android:layout_height="@dimen/dimen35"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/tjian_img" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen10"
+                                    android:gravity="center"
+                                    android:text="推荐清单"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/dimen1"
+                                android:layout_height="match_parent"
+                                android:text="|"
+                                android:background="#E8E8E8"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/dimen30"/>
+
+                            <LinearLayout
+                                android:id="@+id/r_tu"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dimen10"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/dimen35"
+                                    android:layout_height="@dimen/dimen35"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/wang_img_tu" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen10"
+                                    android:gravity="center"
+                                    android:text="网络图谱"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen15"
+                    android:layout_marginRight="@dimen/dimen10"
+                    app:cardCornerRadius="@dimen/dimen5"
+                    android:layout_marginBottom="@dimen/dimen15"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/r_reward"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen35"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dimen10"
+                                android:layout_marginTop="@dimen/dimen5"
+                                android:layout_weight="1"
+                                android:text="财务管理"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:id="@+id/r_cai_left"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dimen5"
+                                android:src="@mipmap/left_image" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen2"
+                            android:layout_marginTop="@dimen/dimen10"
+                            android:background="#E8E8E8" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dimen15">
+
+                            <ImageView
+                                android:id="@+id/r_showlist"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/dimen20"
+                                android:layout_marginTop="0dp"
+                                android:src="@mipmap/list_imgs" />
+
+                            <TextView
+                                android:id="@+id/mjf_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/r_showlist"
+                                android:layout_marginLeft="@dimen/dimen10"
+                                android:layout_marginTop="@dimen/dimen10"
+                                android:text="奖励列表"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:paddingBottom="@dimen/dimen10"
+                                />
+
+                            <ImageView
+                                android:id="@+id/r_xiang"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/dimen40"
+                                android:layout_marginTop="0dp"
+                                android:layout_toRightOf="@+id/r_showlist"
+                                android:src="@mipmap/jifen_imgs" />
+
+                            <TextView
+                                android:id="@+id/mjf_xi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/r_xiang"
+                                android:layout_marginLeft="@dimen/dimen15"
+                                android:layout_marginTop="@dimen/dimen10"
+                                android:layout_toRightOf="@+id/r_showlist"
+                                android:text="奖励积分明细"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:paddingBottom="@dimen/dimen10"
+                                />
+
+                            <ImageView
+                                android:id="@+id/r_tixian"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/dimen45"
+                                android:layout_marginTop="0dp"
+                                android:layout_toRightOf="@+id/r_xiang"
+                                android:src="@mipmap/jifen_ti_img" />
+
+                            <TextView
+                                android:id="@+id/mjd_ti"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/r_tixian"
+                                android:layout_marginLeft="@dimen/dimen30"
+                                android:layout_marginTop="@dimen/dimen10"
+                                android:layout_toRightOf="@+id/r_xiang"
+                                android:text="积分转换DMF"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:paddingBottom="@dimen/dimen10"
+                                />
+
+                            <ImageView
+                                android:id="@+id/r_shen"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/dimen45"
+                                android:layout_marginTop="0dp"
+                                android:layout_toRightOf="@+id/r_tixian"
+                                android:src="@mipmap/shen_qing_img" />
+
+                            <ImageView
+                                android:id="@+id/r_jifen"
+                                android:layout_width="@dimen/dimen30"
+                                android:layout_height="@dimen/dimen30"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/dimen30"
+                                android:layout_marginTop="0dp"
+                                android:layout_toRightOf="@+id/r_shen"
+                                android:src="@mipmap/jifen_zhuan_zeng_img" />
+
+                            <TextView
+                                android:id="@+id/mjf_zz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/r_jifen"
+                                android:layout_marginLeft="@dimen/dimen20"
+                                android:layout_marginTop="@dimen/dimen10"
+                                android:layout_toRightOf="@+id/r_shen"
+                                android:text="积分转增"
+                                android:textStyle="bold"
+                                android:paddingBottom="@dimen/dimen10"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/mjf_shen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/r_shen"
+                                android:layout_marginLeft="@dimen/dimen35"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@+id/r_tixian"
+                                android:paddingBottom="@dimen/dimen10"
+                                android:text="申请服务"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

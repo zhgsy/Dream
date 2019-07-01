@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity.mineactivity.AboutActivity">
+    <include layout="@layout/title"/>
+    <ImageView
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:scaleType="fitXY"
+        android:background="@mipmap/app_name"
+        android:layout_marginTop="@dimen/dimen5"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="软件版本:2.7.0"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                禾元通数字资产交易平台,主要面向全球提供比特币、莱特币、以太坊、等数字资产的币币交易和衍
+        生品交易服务"
+        android:layout_marginTop="@dimen/dimen10"
+        android:padding="@dimen/dimen10"/>
+    <LinearLayout
+        android:id="@+id/ll_team"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen10"
+        android:background="#fdfdfe"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen25"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:background="@mipmap/mine_abouto"
+            android:layout_marginLeft="@dimen/dimen20"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen20"
+            android:drawableRight="@mipmap/bg_right_arrow"
+            android:layout_marginRight="@dimen/dimen30"
+            android:gravity="center_vertical"
+            android:text="软件更新" />
+    </LinearLayout>
+
+  <!--  <LinearLayout
+        android:id="@+id/ll_onLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen2"
+        android:background="#fdfdfe"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen25"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:background="@mipmap/mine_abouttwo"
+            android:layout_marginLeft="@dimen/dimen20"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen20"
+            android:drawableRight="@mipmap/bg_right_arrow"
+            android:gravity="center_vertical"
+            android:text="隐私条款" />
+    </LinearLayout>
+-->
+  <!--  <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen2"
+        android:background="#fdfdfe"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen25"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:background="@mipmap/mine_aboutt"
+            android:layout_marginLeft="@dimen/dimen20"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen20"
+            android:drawableRight="@mipmap/bg_right_arrow"
+            android:gravity="center_vertical"
+            android:text="软件更新" />
+    </LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RewardListActivity">
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期:"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/r_left"
+            android:layout_width="@dimen/dimen15"
+            android:layout_height="@dimen/dimen15"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen4"
+            android:background="@mipmap/bg_back"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/r_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen5"
+            android:text="2018-07-30"
+            android:background="#ff00" />
+
+        <TextView
+            android:id="@+id/r_right_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen20"
+            android:text="2018-07-24"
+            android:background="#ff00"/>
+
+        <ImageView
+            android:id="@+id/r_right"
+            android:layout_width="@dimen/dimen15"
+            android:layout_height="@dimen/dimen15"
+            android:layout_marginLeft="@dimen/dimen5"
+            android:layout_marginTop="@dimen/dimen4"
+            android:background="@mipmap/mouth_right"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员编码:"/>
+        <TextView
+            android:id="@+id/nunhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99168"
+            android:layout_marginLeft="@dimen/dimen20"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="合计"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/dimen10"/>
+        <TextView
+            android:id="@+id/mnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/dimen10"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:background="#CCCCCC"
+        android:layout_marginTop="@dimen/dimen2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dimen1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#CCCCCC"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:text="推荐奖金:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:text="分享奖金:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:text="共享提成:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:text="共享积分:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(收15%)"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:text="报单奖金:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:text="综合管理费:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(收15%)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:text="实发奖金:" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/lione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/litwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/lithr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共享提成:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/lifour"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen30"
+                android:gravity="center"
+                android:text="共享积分:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/lifive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报单奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/lisix"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen35"
+                android:text="综合管理费:"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen10"/>
+
+            <TextView
+                android:id="@+id/liserven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实发奖金:"
+                android:layout_marginTop="@dimen/dimen10"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/dimen1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#CCCCCC"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/zz_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/zz_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/zz_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共享提成:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/zz_four"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen30"
+                android:text="共享积分:"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/zz_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报单奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/zz_six"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen35"
+                android:text="综合管理费:"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen10"/>
+
+            <TextView
+                android:id="@+id/zz_serven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实发奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/dimen1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#CCCCCC"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/yy_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/yy_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/yy_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共享提成:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/yy_four"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen30"
+                android:gravity="center"
+                android:text="共享积分:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/yy_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报单奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+            <TextView
+                android:id="@+id/yy_six"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen35"
+                android:text="综合管理费:"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen10"/>
+
+            <TextView
+                android:id="@+id/yy_serven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实发奖金:"
+                android:layout_marginTop="@dimen/dimen10"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:background="#CCCCCC"
+        android:layout_marginTop="@dimen/dimen10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="当月统计:"/>
+        <TextView
+            android:id="@+id/r_listnew"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="2019年6月"
+            android:layout_marginLeft="@dimen/dimen20"/>
+        <Button
+            android:id="@+id/r_lin_butn"
+            android:layout_width="@dimen/dimen15"
+            android:layout_height="@dimen/dimen15"
+            android:background="@mipmap/mouth_right"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:layout_marginTop="@dimen/dimen2"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen2"
+        android:background="#CCCCCC"
+        android:layout_marginTop="@dimen/dimen5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen10">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐奖金:"
+                    android:layout_marginTop="@dimen/dimen10"/>
+                <TextView
+                    android:id="@+id/mouth_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享奖金:"
+                    android:layout_marginTop="@dimen/dimen10"/>
+                <TextView
+                    android:id="@+id/mouth_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen10"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共享提成:"
+                    android:layout_marginTop="@dimen/dimen10"/>
+                <TextView
+                    android:id="@+id/mouth_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen10"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共享积分:"
+                    android:layout_marginTop="@dimen/dimen10"/>
+                <TextView
+                    android:id="@+id/mouth_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报单奖金:"
+                    android:layout_marginTop="@dimen/dimen10"/>
+                <TextView
+                    android:id="@+id/mouth_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen10"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实发奖金:"
+                    android:layout_marginTop="@dimen/dimen10"/>
+                <TextView
+                    android:id="@+id/mouth_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen10"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+    <!--
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>-->

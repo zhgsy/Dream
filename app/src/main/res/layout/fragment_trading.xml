@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TradingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--  <include layout="@layout/title"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen20">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner"
+                android:layout_width="@dimen/dimen180"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"></android.support.v7.widget.AppCompatSpinner>
+
+            <TextView
+                android:id="@+id/ttt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="DMF折线图" />
+
+            <dream.api.dmf.cn.dreaming.view.ChartView
+                android:id="@+id/chartview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen200"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen10"
+                app:bgcolor="#ffffff"
+                app:interval="55dp"
+                app:isScroll="true"
+                app:linecolor="#02bbb7"
+                app:xylinecolor="#e2e2e2"
+                app:xylinewidth="1dp"
+                app:xytextcolor="#7e7e7e"
+                app:xytextsize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="币种"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="最新价"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="涨跌价"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="操作"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen4"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/r_oname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DMF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t_newprice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="22.2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t_addprice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="+8%"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/r_butn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen30"
+                android:layout_marginLeft="@dimen/dimen5"
+                android:layout_marginRight="@dimen/dimen5"
+                android:layout_weight="1"
+                android:background="@drawable/money_backgroud"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="进入"
+                android:textColor="@color/textWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen1"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/r_tname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="HYT"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/h_newprice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2.12"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t_haddprice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-8%"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/r_butn2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen30"
+                android:layout_marginLeft="@dimen/dimen5"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/dimen5"
+                android:layout_weight="1"
+                android:background="@drawable/money_backgroud"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="进入"
+                android:textColor="@color/textWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--     <android.support.v7.widget.RecyclerView
+                 android:id="@+id/t_recy"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>-->
+    </LinearLayout>
+
+
+</FrameLayout>

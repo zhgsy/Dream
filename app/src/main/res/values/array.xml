@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bank">
+        <item>银行卡</item>
+        <item>微信</item>
+        <item>支付宝</item>
+    </array>
+    <array name="Bank">
+            <item>工商银行</item>
+            <item>农业银行</item>
+            <item>建设银行</item>
+            <item>中国银行</item>
+            <item>其他银行</item>
+    </array>
+
+</resources>

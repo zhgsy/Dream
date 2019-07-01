@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dream.api.dmf.cn.dreaming">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_name"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 适配刘海屏、水滴屏 Android P -->
+        <meta-data
+            android:name="android.vendor.full_screen"
+            android:value="true" />
+
+        <activity android:name=".activity.YinActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.RegstActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ForgetActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.RewardListActivity" />
+        <activity android:name=".activity.RewardMxActivity" />
+        <activity android:name=".activity.RewardTiActivity" />
+        <activity android:name=".activity.RewardzzActivity" />
+        <activity android:name=".activity.RewardShenActivity" />
+        <activity android:name=".activity.RewardPicesActivity" />
+        <activity android:name=".activity.RewardDanActivity" />
+        <activity android:name=".activity.MoneyActivity" />
+        <activity android:name=".activity.moneyactivity.MoneyZActivity" />
+        <activity android:name=".activity.moneyactivity.MoneyluActivity" />
+        <activity android:name=".activity.moneyactivity.MoneyMLActivity" />
+        <activity android:name=".activity.moneyactivity.MoneyHRActivity" />
+        <activity android:name=".activity.moneyactivity.MoneyHCActivity" />
+        <activity android:name=".activity.moneyactivity.MoneyQActivity" />
+        <activity android:name=".activity.moneyactivity.MoneyHYTBActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity
+            android:name=".activity.mineactivity.ShopActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.mineactivity.AddressActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.mineactivity.ShareActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.mineactivity.SetActivity" />
+        <activity android:name=".activity.mineactivity.CaptureActivity" />
+        <activity android:name=".activity.minactivity.AllActivity" />
+        <activity android:name=".activity.minactivity.WaitActivity" />
+        <activity android:name=".activity.minactivity.FahuoActivity" />
+        <activity android:name=".activity.minactivity.ShouActivity" />
+        <activity android:name=".activity.minactivity.FinishActivity" />
+        <activity android:name=".activity.moneylu.MoneyLuActivity" />
+        <activity android:name=".activity.moneylu.BuyActivity" />
+        <activity android:name=".activity.moneylu.BigBuyActivity" />
+        <activity android:name=".activity.moneylu.BigSellActivity" />
+        <activity android:name=".activity.mineactivity.ShouKActivity" />
+        <activity android:name=".activity.mineactivity.AnQuanActivity" />
+        <activity android:name=".activity.mineactivity.LoadDownActivity" />
+        <activity android:name=".activity.mineactivity.AboutActivity" />
+        <activity android:name=".activity.mineactivity.BankActivity" />
+        <activity android:name=".activity.mineactivity.AliActivity" />
+        <activity android:name=".activity.mineactivity.WeChatActivity" />
+        <activity android:name=".activity.mineactivity.PaypleActivity" />
+        <activity android:name=".activity.mineactivity.GestureActivity" />
+        <activity android:name=".activity.mineactivity.ChangePswdActivity" />
+        <activity android:name=".activity.mineactivity.ChangeSafePswdActivity" />
+        <activity android:name=".activity.mineactivity.MJListActivity" />
+        <activity android:name=".activity.BuyInActivity" />
+        <activity android:name=".activity.SellNumActivity" />
+        <activity android:name=".activity.CrowdActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mineactivity.ShouKActivity">
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:id="@+id/tv_bank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+        android:drawableRight="@mipmap/bg_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="银行卡"
+        android:textColor="@color/textBlack" />
+
+    <TextView
+        android:id="@+id/tv_aLi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+        android:drawableRight="@mipmap/bg_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="支付宝"
+        android:textColor="@color/textBlack" />
+
+    <TextView
+        android:id="@+id/tv_weiChat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen1"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+        android:drawableRight="@mipmap/bg_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="微信"
+        android:textColor="@color/textBlack" />
+    <TextView
+        android:id="@+id/tv_paypal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen1"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+        android:drawableRight="@mipmap/bg_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="paypal"
+        android:textColor="@color/textBlack"
+        android:visibility="gone"/>
+</LinearLayout>

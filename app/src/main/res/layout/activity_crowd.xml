@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CrowdActivity">
+
+
+
+    <Button
+        android:id="@+id/c_false"
+        android:layout_width="@dimen/dimen100"
+        android:layout_height="@dimen/dimen50"
+        android:text="取消"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen50"/>
+
+    <Button
+
+        android:id="@+id/c_butn"
+        android:layout_width="@dimen/dimen100"
+        android:layout_height="@dimen/dimen50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen72"
+        android:layout_marginRight="@dimen/dimen50"
+        android:layout_toRightOf="@+id/c_false"
+        android:text="同意" />
+</RelativeLayout>

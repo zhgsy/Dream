@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <com.recker.flybanner.FlyBanner
+          android:id="@+id/banner"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"></com.recker.flybanner.FlyBanner>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dimen40"
+          android:orientation="horizontal">
+          <View
+              android:layout_width="@dimen/dimen5"
+              android:layout_height="@dimen/dimen30"
+              android:layout_gravity="center"
+              android:background="@drawable/login_butn"
+              android:layout_marginLeft="@dimen/dimen10"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="资讯"
+              android:textSize="18sp"
+              android:textColor="#050118"
+              android:layout_marginTop="@dimen/dimen8"
+              android:layout_marginLeft="@dimen/dimen20"/>
+      </LinearLayout>
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recForeign"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      </android.support.v7.widget.RecyclerView>
+  </LinearLayout>
+
+
+</LinearLayout>

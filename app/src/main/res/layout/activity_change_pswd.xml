@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mineactivity.ChangePswdActivity">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_oldPswd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:hint="请输入原始登陆密码" />
+
+        <CheckBox
+            android:id="@+id/login_exe1"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen13"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimen20"
+            android:background="@drawable/loginba_image"
+            android:button="@null"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_newPswd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:hint="请输入新的登陆密码" />
+
+        <CheckBox
+            android:id="@+id/login_exe2"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen13"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimen20"
+            android:background="@drawable/loginba_image"
+            android:button="@null"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:hint="请输入确认登陆密码" />
+
+        <CheckBox
+            android:id="@+id/login_exe"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen13"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimen20"
+            android:background="@drawable/loginba_image"
+            android:button="@null"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginTop="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:background="@drawable/login_butn"
+        android:gravity="center"
+        android:text="修改登陆密码"
+        android:textColor="@color/textWhite" />
+</LinearLayout>

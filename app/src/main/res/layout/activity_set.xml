@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mineactivity.SetActivity">
+    <include layout="@layout/title"/>
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="账户与安全"
+        android:textColor="@color/textBlack" />
+
+    <TextView
+        android:id="@+id/tv_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="收款方式"
+        android:textColor="@color/textBlack" />
+
+    <TextView
+        android:id="@+id/tv_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen1"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="钱包管理"
+        android:textColor="@color/textBlack" />
+
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen10"
+        android:text="清除缓存"
+        android:textColor="@color/textBlack" />
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginRight="@dimen/dimen10"
+        android:background="@color/item_white"
+        android:gravity="center"
+        android:text="退出"
+        android:textColor="@color/textBlack" />
+</LinearLayout>

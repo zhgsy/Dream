@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mineactivity.LoadDownActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50"
+        android:background="#f18a1c"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我要推广"
+            android:textColor="@color/textWhite" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen14"
+            android:src="@mipmap/bg_back" />
+
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="20dp"
+            android:layout_height="@dimen/dimen25"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/dimen14"
+            android:src="@mipmap/bg_share"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen10"
+            android:text="请扫描二位码下载app" />
+
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="@dimen/dimen200"
+            android:layout_height="@dimen/dimen200"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginBottom="@dimen/dimen80"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/t_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivImg"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/butn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_url"
+            android:background="@drawable/login_butn"
+            android:layout_marginRight="@dimen/dimen20"
+            android:layout_marginLeft="@dimen/dimen20"
+            android:text="点击复制"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="@dimen/dimen10"/>
+    </RelativeLayout>
+
+</LinearLayout>

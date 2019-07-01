@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mineactivity.AliActivity">
+
+    <include layout="@layout/title" />
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/bg_datail_scan"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:background="#fdfdfe"
+        android:hint="请输入支付宝户名"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_margin="@dimen/dimen14"
+        android:background="@color/line1" />
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginRight="@dimen/dimen14"
+        android:background="#fdfdfe"
+        android:hint="请输入支付宝账号"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1"
+        android:layout_margin="@dimen/dimen14"
+        android:background="@color/line1" />
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_marginLeft="@dimen/dimen14"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginRight="@dimen/dimen14"
+        android:background="@drawable/login_butn"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/dimen20" />
+</LinearLayout>

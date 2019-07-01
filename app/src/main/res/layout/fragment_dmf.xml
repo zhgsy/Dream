@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DMFFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#FFFFFF"
+           android:layout_marginLeft="@dimen/dimen30"
+           android:layout_marginRight="@dimen/dimen30"
+           android:layout_marginTop="@dimen/dimen30">
+
+           <LinearLayout
+               android:layout_width="@dimen/dimen300"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+
+               android:orientation="vertical"
+               android:padding="@dimen/dimen20">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/dname"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="HYTB" />
+
+                   <TextView
+                       android:id="@+id/d_name"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="FHYTB" />
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="金元" />
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="额度" />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/dimen10">
+
+                   <TextView
+                       android:id="@+id/num_one"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="1000" />
+
+                   <TextView
+                       android:id="@+id/num_two"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="1000" />
+
+                   <TextView
+                       android:id="@+id/num_three"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="1000" />
+
+
+                   <TextView
+                       android:id="@+id/num_four"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:text="1000" />
+               </LinearLayout>
+           </LinearLayout>
+       </android.support.v7.widget.CardView>
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#FFFFFF"
+           android:layout_marginLeft="@dimen/dimen30"
+           android:layout_marginRight="@dimen/dimen30"
+           android:layout_marginTop="@dimen/dimen30">
+
+           <LinearLayout
+               android:layout_width="@dimen/dimen300"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+
+               android:orientation="vertical"
+               android:padding="@dimen/dimen20">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <LinearLayout
+                       android:id="@+id/m_money_lu"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center">
+                       <ImageView
+                           android:layout_width="@dimen/dimen30"
+                           android:layout_height="@dimen/dimen30"
+                           android:gravity="center"
+                           android:background="@mipmap/money_l" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:text="交易记录"
+                           android:layout_marginTop="@dimen/dimen10"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/m_money_qq"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center">
+                       <ImageView
+                           android:layout_width="@dimen/dimen30"
+                           android:layout_height="@dimen/dimen30"
+                           android:gravity="center"
+                           android:background="@mipmap/money_m"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:text="钱包记录"
+                           android:layout_marginTop="@dimen/dimen10"/>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:id="@+id/m_money_q"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:gravity="center">
+                       <ImageView
+                           android:layout_width="@dimen/dimen30"
+                           android:layout_height="@dimen/dimen30"
+                           android:gravity="center"
+                           android:background="@mipmap/money_q"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:text="金元转换"
+                           android:layout_marginTop="@dimen/dimen10"/>
+
+                   </LinearLayout>
+               </LinearLayout>
+
+
+           </LinearLayout>
+       </android.support.v7.widget.CardView>
+   </LinearLayout>
+</FrameLayout>

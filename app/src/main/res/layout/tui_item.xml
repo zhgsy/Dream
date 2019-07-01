@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/t_image"
+        android:layout_width="@dimen/dimen40"
+        android:layout_height="@dimen/dimen40"
+        app:placeholderImage="@mipmap/heard_image"
+        app:roundAsCircle="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dimen40"
+        android:text="安" />
+
+    <TextView
+        android:id="@+id/t_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_name"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/t_name"
+        android:text="会员编号:" />
+
+    <TextView
+        android:id="@+id/t_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_phone"
+        android:layout_marginLeft="-12dp"
+
+        android:layout_marginTop="-1dp"
+        android:layout_toRightOf="@+id/t_name"
+        android:text="时间:" />
+    <TextView
+        android:id="@+id/t_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会员等级：普卡"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tt_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会员等级：普卡"
+        android:layout_below="@+id/t_money"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen12"/>
+
+  <!--  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/t_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="安"/>
+        <TextView
+            android:id="@+id/t_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员编号:"/>
+        <TextView
+            android:id="@+id/t_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间:"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>-->
+</RelativeLayout>
